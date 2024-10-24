@@ -39,6 +39,18 @@ h6 {
   padding: 0;
 }
 
+@media (max-width: 768px) {
+    .small-img {
+      width: 100%; /* Adjust the image width to fit in a smaller space */
+      height: auto;
+    }
+  }
+
+.box {
+    text-align: center; /* Center the content */
+    margin-bottom: 20px; /* Add some space between boxes */
+  }
+
 .back-to-top {
   position: fixed;
   display: none;
@@ -295,6 +307,18 @@ h6 {
   position: absolute;
   right: 15px;
 }
+/* Drop down menu color */
+.main-nav ul li a {
+    color: black;
+  }
+  
+  .dropdown-menu li a {
+    color: black;
+  }
+  .main-nav ul li a:hover, 
+  .dropdown-menu li a:hover {
+    color: #333; /* Darker shade of black or any color */
+  }
 
 .mobile-nav {
   position: fixed;
@@ -526,11 +550,11 @@ h6 {
 }
 
 #services .box {
-  padding: 30px;
+  padding-bottom: 10px;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  margin: 0 10px 40px 10px;
+  margin: 0 5px 40px 0px;
   background: #fff;
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
   transition: all 0.3s ease-in-out;
@@ -553,11 +577,17 @@ h6 {
   transition: 0.5s;
 }
 
-#services .title {
-  margin-left: 40px;
-  font-weight: 700;
+#services .img-fluid  {
   margin-bottom: 15px;
-  font-size: 18px;
+}
+
+
+
+#services .title {
+  font-weight: 700;
+  margin-bottom: 5px;
+  margin-top: 0;
+  font-size: 15px;
 }
 
 #services .title a {
@@ -569,8 +599,8 @@ h6 {
 }
 
 #services .description {
-  font-size: 14px;
-  margin-left: 40px;
+  font-size: 10px;
+  margin-left: 0px;
   line-height: 24px;
   margin-bottom: 0;
 }
